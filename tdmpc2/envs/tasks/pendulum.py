@@ -15,7 +15,7 @@ _TARGET_SPEED = 9.
 
 def get_model_and_assets():
     """Returns a tuple containing the model XML string and a dict of assets."""
-    return resources.GetResource(os.path.join(_TASKS_DIR, 'pendulum.xml')), .common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, 'pendulum.xml')), common.ASSETS
 
 
 @pendulum.SUITE.add('custom')

@@ -25,7 +25,7 @@ _JOINTS = ['tail1',
 
 def get_model_and_assets():
     """Returns a tuple containing the model XML string and a dict of assets."""
-    return resources.GetResource(os.path.join(_TASKS_DIR, 'fish.xml')), .common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, 'fish.xml')), common.ASSETS
 
 
 @fish.SUITE.add('custom')

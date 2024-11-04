@@ -21,7 +21,7 @@ _CONTROL_TIMESTEP = .02   # (seconds)
 
 def get_model_and_assets():
     """Returns a tuple containing the model XML string and a dict of assets."""
-    return resources.GetResource(os.path.join(_TASKS_DIR, 'ball_in_cup.xml')), .common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, 'ball_in_cup.xml')), common.ASSETS
 
 
 @ball_in_cup.SUITE.add('custom')

@@ -15,7 +15,7 @@ _YOGA_LEGS_UP_HEIGHT = 1.1
 
 def get_model_and_assets():
     """Returns a tuple containing the model XML string and a dict of assets."""
-    return resources.GetResource(os.path.join(_TASKS_DIR, 'walker.xml')), common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, 'walker.xml')), .common.ASSETS
 
 
 @walker.SUITE.add('custom')

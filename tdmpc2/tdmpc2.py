@@ -2,9 +2,9 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from common import math
-from common.scale import RunningScale
-from common.world_model import WorldModel
+from .common import math
+from .common.scale import RunningScale
+from .common.world_model import WorldModel
 
 
 class TDMPC2:
@@ -220,7 +220,7 @@ class TDMPC2:
 		Main update function. Corresponds to one iteration of model learning.
 		
 		Args:
-			buffer (common.buffer.Buffer): Replay buffer.
+			buffer (.common.buffer.Buffer): Replay buffer.
 		
 		Returns:
 			dict: Dictionary of training statistics.

@@ -4,7 +4,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from common import layers, math, init
+from . import layers, math, init
 
 
 class WorldModel(nn.Module):

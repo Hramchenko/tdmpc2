@@ -27,7 +27,7 @@ _SPIN_SPEED = 5
 
 def get_model_and_assets():
 	"""Returns a tuple containing the model XML string and a dict of assets."""
-	return resources.GetResource(os.path.join(_TASKS_DIR, 'hopper.xml')), common.ASSETS
+	return resources.GetResource(os.path.join(_TASKS_DIR, 'hopper.xml')), .common.ASSETS
 
 
 @hopper.SUITE.add('custom')

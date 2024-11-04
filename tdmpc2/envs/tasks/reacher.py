@@ -19,7 +19,7 @@ def get_model_and_assets(links):
     """Returns a tuple containing the model XML string and a dict of assets."""
     assert links in {3, 4}, 'Only 3 or 4 links are supported.'
     fn = 'reacher_three_links.xml' if links == 3 else 'reacher_four_links.xml'
-    return resources.GetResource(os.path.join(_TASKS_DIR, fn)), common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, fn)), .common.ASSETS
 
 
 @reacher.SUITE.add('custom')

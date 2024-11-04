@@ -4,7 +4,7 @@ from pathlib import Path
 import hydra
 from omegaconf import OmegaConf
 
-from common import MODEL_SIZE, TASK_SET
+from . import MODEL_SIZE, TASK_SET
 
 
 def parse_cfg(cfg: OmegaConf) -> OmegaConf:

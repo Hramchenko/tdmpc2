@@ -15,7 +15,7 @@ _CHEETAH_SPIN_SPEED = 8
 
 def get_model_and_assets():
     """Returns a tuple containing the model XML string and a dict of assets."""
-    return resources.GetResource(os.path.join(_TASKS_DIR, 'cheetah.xml')), common.ASSETS
+    return resources.GetResource(os.path.join(_TASKS_DIR, 'cheetah.xml')), .common.ASSETS
 
 
 @cheetah.SUITE.add('custom')

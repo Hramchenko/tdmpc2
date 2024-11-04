@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from tensordict.tensordict import TensorDict
 
-from trainer.base import Trainer
+from .base import Trainer
 
 
 class OnlineTrainer(Trainer):

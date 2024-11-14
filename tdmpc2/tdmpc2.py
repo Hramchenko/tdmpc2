@@ -233,22 +233,7 @@ class TDMPC2(torch.nn.Module):
 		discount = self.discount[task].unsqueeze(-1) if self.cfg.multitask else self.discount
 		return reward + discount * self.model.Q(next_z, pi, task, return_type='min', target=True)
 
-<<<<<<< HEAD
-	def update(self, buffer):
-		"""
-		Main update function. Corresponds to one iteration of model learning.
-		
-		Args:
-			buffer (.common.buffer.Buffer): Replay buffer.
-		
-		Returns:
-			dict: Dictionary of training statistics.
-		"""
-		obs, action, reward, task = buffer.sample()
-	
-=======
 	def _update(self, obs, action, reward, task=None):
->>>>>>> 1bfbcb7794208a25a9ff18985344172119150626
 		# Compute targets
 		with torch.no_grad():
 			next_z = self.model.encode(obs[1:], task)

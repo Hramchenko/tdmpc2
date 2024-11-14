@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tdmpc2"
-version = "2024.11.04.1"
+version = "2024.11.14.1"
 dependencies = [
   "tensordict",
   "torchrl",
